@@ -1,0 +1,23 @@
+<h3>Regist New Account</h3>
+<form id="register" method="post" action="register">
+	{{#if error}}
+		<div class="alert alert-danger" id="formError">{{{error}}}</div>
+	{{/if}}
+	<div class="form-group">
+		<label for="username" data-toggle="tooltip" title="">Username:</label>
+		<input type="text" class="form-control" name="username" id="username" data-toggle="tooltip" title="">
+	</div>
+	<div class="form-group">
+		<label for="password" data-toggle="tooltip" title="">Password:</label>
+		<input type="password" class="form-control" name="password" id="password" data-toggle="tooltip" title="">
+	</div>
+		<div class="form-group">
+		<label for="password-again" data-toggle="tooltip" title="">Password:</label>
+		<input type="password" class="form-control" name="password_again" id="password-again" data-toggle="tooltip" title="">
+	</div>
+		<div class="form-group">
+		<label for="email" data-toggle="tooltip" title="">Email:</label>
+		<input type="text" class="form-control" name="email" id="email" data-toggle="tooltip" title="">
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

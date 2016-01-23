@@ -1,0 +1,74 @@
+<script tyoe="text/javascript">
+        $(document).ready(function(){
+        var currentUser = $("#loginAlert span").html();
+        $.getTimer1(currentUser,0);
+        $.getTimer1(currentUser,1);
+        $.getTimer1(currentUser,2);
+        });
+
+</script>
+<div class="alert alert-success" id="loginAlert">Welcome <span>{{username}}</span></div>
+                        
+<div class="col-sm-4" id='timer0'>
+                                        <div class="panel panel-default">
+                                                <div class="panel-heading text-center">
+<span class='timernameheading'>Timer name</span><br>
+                                                        <input type='text' class="timername" name='timername' index='0' >
+                                                </div>
+                                                <div class="panel-body showtime text-center">
+                                                        <input type='text' class="hours digit" value="0" size='5' style='width: 30px'>
+                                                        <input type='text' class="minutes digit" size="2" value="00" style='width: 30px'>
+                                                        <input type='text' class="seconds digit" size="2" value="00" style='width: 30px'>
+<br><span class='timerdone'>Done at: <span class="timerdonetime"></span></span>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                        <button type="button" class="btn btn-default timerstart" id='timer0start' index='0'>Start</button>
+                                                        <button style="display:none" type="button" class="btn btn-default timerresetvisibility timerreset" id='timer0reset' index='0'>Reset</button>
+                                                </div>
+                                        </div>
+
+
+
+ </div>
+                        <div class="col-sm-4" id='timer1'>
+                                        <div class="panel panel-default">
+                                                <div class="panel-heading text-center">
+<span class='timernameheading'>Timer name</span><br>
+                                                        <input type='text' class="timername" name='timername' index='1' >
+                                                </div>
+                                                <div class="panel-body showtime text-center">
+                                                        <input type='text' class="hours digit" value="0" size='5' style='width: 30px'>
+                                                        <input type='text' class="minutes digit" size="2" value="00" style='width: 30px'>
+                                                        <input type='text' class="seconds digit" size="2" value="00" style='width: 30px'>
+<br><span class='timerdone'>Done at: <span class="timerdonetime"></span></span>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                        <button type="button" class="btn btn-default timerstart" id='timer1start' index='1'>Start</button>
+                                                        <button style="display:none" type="button" class="btn btn-default timerresetvisibility timerreset" id='timer1reset' index='1'>Reset</button>
+                                                </div>
+                                        </div>
+
+
+
+                                </div>
+                        <div class="col-sm-4" id='timer2'>
+                                        <div class="panel panel-default">
+                                                <div class="panel-heading text-center">
+<span class='timernameheading'>Timer name</span><br>
+                                                        <input type='text' class="timername" name='timername' index='2' >
+                                                </div>
+                                                <div class="panel-body showtime text-center">
+                                                        <input type='text' class="hours digit" value="0" size='5' style='width: 30px'>
+                                                        <input type='text' class="minutes digit" size="2" value="00" style='width: 30px'>
+                                                        <input type='text' class="seconds digit" size="2" value="00" style='width: 30px'>
+<br><span class='timerdone'>Done at: <span class="timerdonetime"></span></span>
+                                                </div>
+                                                <div class="panel-footer text-center">
+                                                        <button type="button" class="btn btn-default timerstart" id='timer2start' index='2'>Start</button>
+                                                        <button style="display:none" type="button" class="btn btn-default timerresetvisibility timerreset" id='timer2reset' index='2'>Reset</button>
+                                                </div>
+                                        </div>
+
+
+
+                                </div>

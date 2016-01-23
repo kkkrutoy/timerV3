@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Runqing Liu Module 12</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="public/js/main.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+ <div class="navbar navbar-inverse col-md-8 col-md-offset-2">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <a href="#" class="navbar-brand">Timers</a>>
+  </div>
+ <ul class="nav navbar-nav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+ </ul>
+ <ul class="nav navbar-nav navbar-right">
+{{#if username}}
+  <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+{{else}}
+  <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+{{/if}}
+ </ul>
+ </div>
+ </div>
+</div>
+<div class="row">
+<div class="col-md-8 col-md-offset-2 header">
+{{{ body }}}
+</div>
+
+</div>
+
+<div class="row">
+ <div class="col-md-8 col-md-offset-2 footer">
+ <div class="panel panel-default" style="text-align:center">Timer Apllication</div>
+ </div>
+</div>
+
+</body>
+</html>
